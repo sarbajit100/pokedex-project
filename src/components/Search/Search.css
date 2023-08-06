@@ -1,0 +1,12 @@
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.input > input{
+    height: 2rem;
+    width: 30rem;
+    margin: 1rem;
+    background-color: cornsilk;
+    border-radius: 1rem;
+}

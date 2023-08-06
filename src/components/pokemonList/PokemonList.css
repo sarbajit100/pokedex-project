@@ -1,0 +1,28 @@
+.pokemon-list{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    justify-content: space-around;
+}
+.pokemon-list-head{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin: 0%;
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.btn > button{
+    height: 2rem;
+    width: 6rem;
+    margin-left: 1rem;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}

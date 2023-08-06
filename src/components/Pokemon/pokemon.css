@@ -1,0 +1,25 @@
+.pokemon-wraper{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+.pokemon-image img{
+    height: 250px;
+    width: 300px;
+    margin-top: 1rem;
+}
+.pokemon-name{
+    font-size: xx-large;
+    color: black;
+    font-style: italic;
+    
+}
+.pokemon-link{
+    text-decoration: none;
+}

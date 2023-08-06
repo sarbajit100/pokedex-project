@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import './App.css'
+
+import CustomRoutes from './routes/CustomRoutes'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className='pokedex'>
+        <Link className='pokedex' to="/">Pokedex</Link>
+      </h1>
+      <CustomRoutes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
