@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <h1 className='pokedex'>
-        <Link className='pokedex' to="/">Pokedex</Link>
+        Pokedex
       </h1>
       <CustomRoutes />
     </div>
