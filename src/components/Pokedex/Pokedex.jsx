@@ -4,9 +4,11 @@ import Search from '../Search/Search'
 
 import PokemonList from '../pokemonList/PokemonList';
 
+import './Pokedex.css'
 function Pokedex() {
   return (
     <>
+        
         <Search />
         <PokemonList />
     </>

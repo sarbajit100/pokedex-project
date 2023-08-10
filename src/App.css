@@ -1,0 +1,9 @@
+.pokedex{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin: 0%;
+  text-decoration: none;
+  color: black;
+}
+  
