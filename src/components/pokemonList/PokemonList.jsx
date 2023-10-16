@@ -8,11 +8,17 @@ import './PokemonList.css';
 function PokemonList() {
 
     const [pokemonList, setPokemonList] = useState([]);
-    const [isLoadind, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
 
     const [pokedexUrl, setPokedexUrl] = useState('https://pokeapi.co/api/v2/pokemon')
     const [nextUrl, setNextUrl] = useState('')
     const [prevUrl, setPrevUrl] = useState('')
+
+    const [pokemonListState, setPokemonListState] = useState({
+      pokemonList: [],
+      isLoading
+    })
+
     async function downloadPokemon() {
         setIsLoading(true)
         const response = await axios.get(pokedexUrl);
@@ -49,7 +55,7 @@ function PokemonList() {
         <button disabled={nextUrl == null} onClick={()=> setPokedexUrl(nextUrl)}>Next</button>
      </div>
      <div className='pokemon-list'>
-     {(isLoadind) ? 'loadong...' : 
+     {(isLoading) ? 'loadong...' : 
         pokemonList.map((p)=> <Pokemon name={p.name} image={p.image} key={p.id} id={p.id} /> )
      }
      </div>
